@@ -24,7 +24,7 @@ function App() {
       !led.includes('.')
     ) {
       setLed(led + '.');
-    } else if (e.currentTarget.value !== '.') {
+    } else if (e.currentTarget.value !== '.' && led.length < 16) {
       setLed(led + e.currentTarget.value);
     }
   };
